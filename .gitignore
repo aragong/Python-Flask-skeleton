@@ -1,0 +1,6 @@
+# FOLDERS 
+.vscode/
+
+# FILES
+*.pyc
+*.log
