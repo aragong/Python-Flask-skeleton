@@ -1,6 +1,11 @@
 # FOLDERS 
 .vscode/
+tests/data
+
 
 # FILES
 *.pyc
+*.log
+*.csv
+*.nc
 *.log
