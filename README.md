@@ -1,5 +1,5 @@
-# SICMA.Process.OperationalController
-Python package designed by [IHCantabria](https://ihcantabria.com/en/) to trigger spill simulations in operational mode.
+# PACKAGE_NAME
+Package short description.
 
 ## :zap: Main methods
 All main methods are located in the file main.py:
@@ -22,6 +22,7 @@ clean_old_jobs(days=2)
 
 ## :package: Package structure
 ````
+(tree /f)
 SICMA.Process.OperationalController
 │   .gitignore
 │   authentifications.key
@@ -66,7 +67,6 @@ Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.Oper
 
 :snake: For code-development issues contact :man_technologist: [German Aragon](https://ihcantabria.com/en/directorio-personal/investigador/german-aragon/) @ :office: [IHCantabria](https://github.com/IHCantabria)
 
-:key: For system administration issues contact :man_technologist: [David del Prado](https://ihcantabria.com/en/directorio-personal/tecnologo/david-del-prado-secadas/) and :woman_technologist: [Gloria Zamora](https://ihcantabria.com/en/directorio-personal/tecnologo/gloria-zamora/) @ :office: [IHCantabria](https://github.com/IHCantabria)
 
 ## :copyright: Credits
 

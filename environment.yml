@@ -24,6 +24,5 @@ dependencies:
   - xarray
   - lxml
   - python-dotenv
-  - uvicorn
-  - fastapi
+  - flask
   - flit
