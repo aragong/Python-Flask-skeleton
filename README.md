@@ -2,7 +2,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
 ![GitHub](https://img.shields.io/github/license/aragong/Python-skeleton?color=green&style=plastic)
 ![Codecov](https://img.shields.io/codecov/c/github/aragong/Python-skeleton?flag=test&style=plastic&token=cb7f5559-044c-4a49-b226-7d381066fe92)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/main?style=plastic)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/CI?label=CI%20build&style=plastic)
 
 Package short description.
 
