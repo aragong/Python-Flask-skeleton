@@ -24,10 +24,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       # Runs a single command using the runners shell
-      - name: Create env
-        run: conda env create --file environment.yml --name env
-      - name: Activate env
-        run: conda activate env
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          miniconda-version: "latest"
+          activate-environment: env
+          environment-file: environment.yml    
+          auto-activate-base: false
       # Runs a set of commands using the runners shell
       - name: Generate coverage report
         run: |
