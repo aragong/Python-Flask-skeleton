@@ -7,6 +7,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
 ![GitHub](https://img.shields.io/github/license/aragong/Python-skeleton?style=plastic)
 
+
 Package short description.
 
 ## :zap: Main methods
