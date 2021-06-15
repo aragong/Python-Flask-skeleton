@@ -30,17 +30,23 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      # Install miniconda and create environment
       - uses: conda-incubator/setup-miniconda@v2
         with:
           miniconda-version: "latest"
           auto-update-conda: "false"
           environment-file: environment.yml    
           activate-environment: python-env
+      
+      # # Install github libraries with pip and --no-deps option
+      # - name: Install python dependencies from github with --no-deps option
+      #   run: pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
 
-      # Runs a set of commands using the runners shell
+      # Run tests and get coverage
       - name: Generate coverage report
         run: pytest --cov=./ --cov-report=xml
-
+      
+      # Update coverage to Codecov to create badge
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with: 
