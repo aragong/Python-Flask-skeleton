@@ -28,6 +28,7 @@ dependencies:
   - flit
   - pytest-cov
   - pip
+  - pre-commit
   
   # GITHUB ISSUE - https://github.com/conda/conda/issues/6805
   # - pip:
