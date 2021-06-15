@@ -1,14 +1,12 @@
 ci:
     autofix_commit_msg: |
-        [pre-commit.ci] auto fixes from pre-commit.com hooks
-
-        for more information, see https://pre-commit.ci
+        [pre-commit.ci] auto fixes from pre-commit.com hooks for more information, see https://pre-commit.ci
     autofix_prs: true
     autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
     autoupdate_schedule: weekly
     skip: []
     submodules: false
-    
+
 repos:
   - repo: https://github.com/psf/black
     rev: 21.6b0 # Replace by any tag/version: https://github.com/psf/black/releases/tag/21.6b0
