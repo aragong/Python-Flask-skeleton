@@ -1,13 +1,13 @@
 # PACKAGE_NAME
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/aragong/Python-skeleton/main)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/CI?label=CI%20build&style=plastic)
-[![codecov](https://codecov.io/gh/aragong/Python-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/aragong/Python-skeleton)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
-![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/aragong/Python-skeleton?style=plastic)
 ![GitHub](https://img.shields.io/github/license/aragong/Python-skeleton?style=plastic)
 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/CI?label=CI%20build&style=plastic)
+[![codecov](https://codecov.io/gh/aragong/Python-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/aragong/Python-skeleton)
 
 Package short description.
 
