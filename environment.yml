@@ -1,4 +1,4 @@
-name: base_env_py3.9
+name: base_py3.9
 channels:
   - conda-forge
   - defaults
@@ -26,3 +26,8 @@ dependencies:
   - python-dotenv
   - flask
   - flit
+  - pip
+  
+  # GITHUB ISSUE - https://github.com/conda/conda/issues/6805
+  # - pip:
+  #   - "git+https://github.com/IHCantabria/datahub.client@v0.8.6#egg=datahubClient --no-deps"

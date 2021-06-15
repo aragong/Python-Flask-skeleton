@@ -59,6 +59,46 @@ SICMA.Process.OperationalController
             __init__.py
             
 ````
+## :house: Local installation
+
+* Using venv + pip:
+```bash
+# Create virtual env  
+python -m venv env --clear
+
+# Activate virtual env
+source 'venv_path'
+
+# Install dependencies
+python -m pip install -r requirements.txt
+
+# Install datahubclient github package with --no-deps option
+python -m pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
+```
+
+* Using conda + pip:
+```bash
+# Create conda env and install python libreries
+conda env create --file environment.yml --name env
+
+# Activate virtual env
+conda activate env
+
+# Install package from github with --no-deps option
+pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
+
+```
+---
+## :recycle: Testing
+* To run tests:
+```bash
+# Unzip tests/fake_results/fake_results.zip in the same directory (fake_inputs/) and run pytest
+unzip -j tests/fake_results/fake_test.zip -d tests/fake_results/
+
+# Run pytests from console
+pytest
+```
+---
 
 ## :rocket: Package deployment
 Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.OperationalController/blob/main/DEPLOY_REQUIREMENTS.md) for a full detailed explanation.
