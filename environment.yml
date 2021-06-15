@@ -26,6 +26,7 @@ dependencies:
   - python-dotenv
   - flask
   - flit
+  - coverage
   - pip
   
   # GITHUB ISSUE - https://github.com/conda/conda/issues/6805
