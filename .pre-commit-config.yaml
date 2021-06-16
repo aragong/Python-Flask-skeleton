@@ -2,16 +2,6 @@ ci:
     skip: []
 
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.4.0
-    hooks:
-      - id: check-docstring-first
-      - id: check-merge-conflict
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-ast
-
   - repo: https://github.com/psf/black
     rev: 21.6b0
     hooks:
