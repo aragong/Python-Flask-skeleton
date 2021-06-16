@@ -120,8 +120,4 @@ Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.Oper
 
 ## :copyright: Credits
 
-*  Developed by [IHCantabria](https://github.com/IHCantabria) in the Framework of [SICMA](https://sicma.ihcantabria.es/en/).
-
-* This development is part of the project *[SICMA - "Development of a system for the prevention and response to marine and air pollution by Hazardous Noxious Substances" [RTC-2017-6642-2, 2019-2021]](https://sicma.ihcantabria.es/en/).*
-
-* A project in parthnership with [CEPSA](https://www.cepsa.com/en) and supported by [Spanish Ministry of Science and Innovation](https://www.ciencia.gob.es/portal/site/MICINN?lang_choosen=en) and cofinanced by [European Regional Development Fund](https://ec.europa.eu/regional_policy/en/funding/erdf/).
+*  Developed by [IHCantabria](https://github.com/IHCantabria) in the Framework of .
