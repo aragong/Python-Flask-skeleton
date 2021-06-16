@@ -45,8 +45,8 @@ jobs:
       # Unzip data for testing
       - name: Unzip test's data
         run: |
-        apt-get install unzip
-        unzip ./tests/data.zip -d ./tests/
+          apt-get install unzip
+          unzip ./tests/data.zip -d ./tests/
       
       # Run tests and get coverage
       - name: Generate coverage report
