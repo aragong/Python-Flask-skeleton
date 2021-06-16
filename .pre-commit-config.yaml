@@ -1,11 +1,5 @@
 ci:
-    autofix_commit_msg: |
-        [pre-commit.ci] auto fixes from pre-commit.com hooks for more information, see https://pre-commit.ci
-    autofix_prs: true
-    autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
-    autoupdate_schedule: weekly
     skip: []
-    submodules: false
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -18,14 +12,13 @@ repos:
       - id: check-yaml
       - id: check-ast
 
-  - repo: local
+repos:
+  - repo: https://github.com/psf/black
+    rev: stable
     hooks:
       - id: black
-        name: black
-        entry: black
-        language: python
-        types: [python]
-
+        language_version: python3 # Should be a command that runs python3.6+
+        
   - repo: local
     hooks:
       - id: pylint
