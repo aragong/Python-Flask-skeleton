@@ -1,5 +1,5 @@
 ci:
-    skip: []
+    skip: [pylint]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -26,4 +26,3 @@ repos:
         entry: pylint
         language: python
         types: [python]
-        
