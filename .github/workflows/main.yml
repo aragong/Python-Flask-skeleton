@@ -43,10 +43,8 @@ jobs:
       #   run: pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
 
       # Unzip data for testing
-      - name: Unzip test's data
-        run: |
-          apt-get install unzip
-          unzip ./tests/data.zip -d ./tests/
+      - name: Extract some files
+        run: 7z x tests/data.zip -otests/    
       
       # Run tests and get coverage
       - name: Generate coverage report
