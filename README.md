@@ -120,4 +120,4 @@ Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.Oper
 
 ## :copyright: Credits
 
-*  Developed by [IHCantabria](https://github.com/IHCantabria) in the Framework of .
+*  Developed by [IHCantabria](https://github.com/IHCantabria).
