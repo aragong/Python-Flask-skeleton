@@ -12,7 +12,6 @@ repos:
       - id: check-yaml
       - id: check-ast
 
-repos:
   - repo: https://github.com/psf/black
     rev: 21.6b0
     hooks:
