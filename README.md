@@ -15,20 +15,18 @@ Package short description.
 ---
 ## :zap: Main methods
 All main methods are located in the file main.py:
-* `run_operational_job()` - Launch simulation in the refenery selected:
+* `main_method_1(arguments)` - [Short description]:
+
 ```python
-# Run job in Algeciras refinery
-run_operational_job(refinery_id=1)
+# Execute whit a-arguments whatever it makes
+main_method_1_a(arg_1=1, arg_2='aaa')
 
-# Run job in Huelva refinery
-run_operational_job(refinery_id=2)
-
-# Run job in Tenerife refinery
-run_operational_job(refinery_id=3)
+# Execute whit b-arguments whatever it makes
+main_method_1_b(arg_1=2, arg_2='bbb')
 ```
-* `clean_old_jobs(days)` - Delete all the jobs simulated before a selected number of days.
+* `main_method_2(arguments)` - [Short description]:
 ```python
-# Delete jobs older than 2 days 
+# Delete jobs older than 2 days
 clean_old_jobs(days=2)
 ```
 
@@ -69,13 +67,13 @@ SICMA.Process.OperationalController
             test_config.py
             test_controller.py
             __init__.py
-            
+
 ````
 ## :house: Local installation
 
 * Using venv + pip:
 ```bash
-# Create virtual env  
+# Create virtual env
 python -m venv env --clear
 
 # Activate virtual env
@@ -127,4 +125,3 @@ Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.Oper
 * This development is part of the project *[SICMA - "Development of a system for the prevention and response to marine and air pollution by Hazardous Noxious Substances" [RTC-2017-6642-2, 2019-2021]](https://sicma.ihcantabria.es/en/).*
 
 * A project in parthnership with [CEPSA](https://www.cepsa.com/en) and supported by [Spanish Ministry of Science and Innovation](https://www.ciencia.gob.es/portal/site/MICINN?lang_choosen=en) and cofinanced by [European Regional Development Fund](https://ec.europa.eu/regional_policy/en/funding/erdf/).
-

@@ -8,8 +8,29 @@ ci:
     submodules: false
 
 repos:
-  - repo: https://github.com/psf/black
-    rev: 21.6b0 # Replace by any tag/version: https://github.com/psf/black/releases/tag/21.6b0
+  # - repo: https://github.com/psf/black
+  #   rev: 21.6b0 # Replace by any tag/version: https://github.com/psf/black/releases/tag/21.6b0
+  #   hooks:
+  #     - id: black
+  #       language_version: python3 # Should be a command that runs python3.6+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-docstring-first
+      - id: check-merge-conflict
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-ast
+
+  - repo: https://github.com/ambv/black
+    rev: 20.8b1
     hooks:
       - id: black
-        language_version: python3 # Should be a command that runs python3.6+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: python
+        types: [python]
