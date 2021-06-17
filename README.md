@@ -12,8 +12,7 @@ Python-Flask Api to trigger TESEO simulations. This development preprocess, exec
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-Flask-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/aragong/Python-Flask-skeleton/main)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-Flask-skeleton/CI?label=CI%20build&style=plastic)
-[![codecov](https://codecov.io/gh/aragong/Python-Flask-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/aragong/Python-Flask-skeleton)
-
+![Coverage](coverage.svg)
 
 ---
 ## :zap: Main methods
