@@ -48,5 +48,8 @@ jobs:
       
       # Run tests
       - name: Generate coverage report
-        run: pytest
+        run: pytest  --cov=./
+
+      - name: Generate coverage badage
+        run: coverage-badge -o coverage.svg -f
       

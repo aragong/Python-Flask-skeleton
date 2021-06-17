@@ -10,7 +10,7 @@ Python-Flask Api to trigger TESEO simulations. This development preprocess, exec
 ![GitHub](https://img.shields.io/github/license/aragong/Python-Flask-skeleton?style=plastic)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-Flask-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/aragong/Python-Flask-skeleton/main)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/aragong/Python-Flask-skeleton)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-Flask-skeleton/CI?label=CI%20build&style=plastic)
 ![Coverage](coverage.svg)
 
@@ -101,7 +101,8 @@ conda activate python-env
 ## :recycle: Continuous integration (CI)
 
 * Premcomit.ci with **black formatter** hook on `commit`. ([.pre-commit-config.yaml](https://github.com/IHCantabria/TESEO.Apiprocess/blob/main/.pre-commit-config.yaml))
-* Github workflow with conda based **deployment**, **testing** and **coverage** update on `tags`. ([Github action](https://github.com/IHCantabria/TESEO.Apiprocess/blob/main/.github/workflows/main.yml))
+* Github workflow with conda based **deployment** and **testing** on `tags`. ([Github action](https://github.com/IHCantabria/TESEO.Apiprocess/blob/main/.github/workflows/main.yml))
+
 
 ---
 ## :heavy_check_mark: Testing
