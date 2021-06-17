@@ -2,6 +2,8 @@
 # PACKAGE_NAME
 Package short description.
 
+[!] CHANGE BADAGE REPO-LINKS
+
 ![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
 ![GitHub repo size](https://img.shields.io/github/repo-size/aragong/Python-skeleton?style=plastic)
@@ -11,6 +13,7 @@ Package short description.
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/aragong/Python-skeleton/main)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/CI?label=CI%20build&style=plastic)
 [![codecov](https://codecov.io/gh/aragong/Python-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/aragong/Python-skeleton)
+
 
 ---
 ## :zap: Main methods
