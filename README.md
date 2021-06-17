@@ -2,15 +2,15 @@
 # TESEO.Apiprocess
 Python-Flask Api to trigger TESEO simulations. This development preprocess, execute and postprocess TESEO oil spill simulations to provide standard outputs based on .nc .json .geojson and .csv formats required by web-clients or users throgh web-request.
 
-![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
-![GitHub repo size](https://img.shields.io/github/repo-size/aragong/Python-skeleton?style=plastic)
-![GitHub](https://img.shields.io/github/license/aragong/Python-skeleton?style=plastic)
+![GitHub top language](https://img.shields.io/github/languages/top/IHCantabria/TESEO.Apiprocess?style=plastic)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/IHCantabria/TESEO.Apiprocess?label=latest%20tag&style=plastic)
+![GitHub repo size](https://img.shields.io/github/repo-size/IHCantabria/TESEO.Apiprocess?style=plastic)
+![GitHub](https://img.shields.io/github/license/IHCantabria/TESEO.Apiprocess?style=plastic)
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/aragong/Python-skeleton/main)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/aragong/Python-skeleton/CI?label=CI%20build&style=plastic)
-[![codecov](https://codecov.io/gh/aragong/Python-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/aragong/Python-skeleton)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/aragong/Python-skeleton/main.svg)](https://results.pre-commit.ci/latest/github/IHCantabria/TESEO.Apiprocess/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/IHCantabria/TESEO.Apiprocess/CI?label=CI%20build&style=plastic)
+[![codecov](https://codecov.io/gh/aragong/Python-skeleton/branch/main/graph/badge.svg)](https://codecov.io/gh/IHCantabria/TESEO.Apiprocess)
 
 ---
 ## :zap: Main methods
