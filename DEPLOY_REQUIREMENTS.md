@@ -5,17 +5,17 @@
 ---
 ## :bust_in_silhouette: Process Name
 
-    - SICMA_Operational (sicmaPOC)
+    - TESEO.Apiprocess
 
 ---
 ## :page_facing_up: App Template
 
-    - Python-task (Cron triggered)
+    - Python-Flask API
 
 ---
 ## :green_book: Playbook name
 
-    - Deploy SICMA_Operational (sicmaPOC)
+    - TESEO.Apiprocess
 
 ---
 ## :computer: System
@@ -31,7 +31,7 @@
 ---
 ## :octocat: Github url
 
-    - git@github.com:IHCantabria/SICMA.Process.OperationalController
+    - git@github.com:IHCantabria/TESEO.Apiprocess
 
 ---
 ## :floppy_disk: Distribution
@@ -69,41 +69,9 @@ LOG_PATH = "/dat/log/sicmaPOC/"
 ```bash
 pytest
 ```
-
----
-## :hourglass: Cron set-up (5 tasks)
-* Trigger operational jobs for each refinery `hourly`
-```bash
-PYTHON_PATH=/var/www/sicmaPOC/env/bin/python
-CODE_CURRENT=/var/www/sicmaPOC
-
-# python-binary python-file python-fuction refineryId
-# Cron task 1 (Run Algeciras)
-cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py run_operational_job 1
-
-# Cron task 2 (Run Huelva)
-cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py run_operational_job 2
-
-# Cron task 3 (Run Tenerife)
-cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py run_operational_job 3
-```
-
-* Trigger operational clean-up of old jobs
-```bash
-# python-binary python-file python-fuction numberOfDays
-# Cron task 4 (clean old operational jobs)
-cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py clean_old_jobs 1
-
-# python-binary python-file python-fuction
-# Cron task 4 (clean unreg operational jobs)
-cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py clean_unregistered_jobs
-```
-
 ---
 ## :calling: Other services, apis or external packages called
-  * :package: SICMA.Api
-  * :package: SICMA.Apiprocess
-  * :package: datahub.client
+  * :package: TESEO binary (numerical model)
 
 ---
 ## :incoming_envelope: Contact us
@@ -113,10 +81,6 @@ cd $CODE_CURRENT/ &&  $PYTHON_PATH main.py clean_unregistered_jobs
 
 ---
 ## :copyright: Credits
-*  Developed by [IHCantabria](https://github.com/IHCantabria) in the Framework of [SICMA](https://sicma.ihcantabria.es/en/).
-
-* This development is part of the project *[SICMA - "Development of a system for the prevention and response to marine and air pollution by Hazardous Noxious Substances" [RTC-2017-6642-2, 2019-2021]](https://sicma.ihcantabria.es/en/).*
-
-* A project in parthnership with [CEPSA](https://www.cepsa.com/en) and supported by [Spanish Ministry of Science and Innovation](https://www.ciencia.gob.es/portal/site/MICINN?lang_choosen=en) and cofinanced by [European Regional Development Fund](https://ec.europa.eu/regional_policy/en/funding/erdf/).
+Developed by :man_technologist: [German Aragon](https://ihcantabria.com/en/directorio-personal/investigador/german-aragon/) @ :office: [IHCantabria](https://github.com/IHCantabria).
 
 

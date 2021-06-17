@@ -1,6 +1,6 @@
 
-# PACKAGE_NAME
-Package short description.
+# TESEO.Apiprocess
+Python-Flask Api to trigger TESEO simulations. This development preprocess, execute and postprocess TESEO oil spill simulations to provide standard outputs based on .nc .json .geojson and .csv formats required by web-clients or users throgh web-request.
 
 ![GitHub top language](https://img.shields.io/github/languages/top/aragong/Python-skeleton?style=plastic)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/aragong/Python-skeleton?label=latest%20tag&style=plastic)
@@ -14,96 +14,99 @@ Package short description.
 
 ---
 ## :zap: Main methods
-All main methods are located in the file main.py:
-* `main_method_1(arguments)` - [Short description]:
+Each typology of simulation is triggered by an specific method:
 
+* TESEO-OIL 2D Simulations:
 ```python
-# Execute whit a-arguments whatever it makes
-main_method_1_a(arg_1=1, arg_2='aaa')
+# 2D Forward simulation single-release
+TESEO_OIL_2D_forward_single_release(arg_1=1, arg_2='aaa')
 
-# Execute whit b-arguments whatever it makes
-main_method_1_b(arg_1=2, arg_2='bbb')
+# 2D Forward simulation continuous-release
+TESEO_OIL_2D_forward_continuous_release(arg_1=2, arg_2='bbb')
+
+# 2D Backwards simulation single-release
+TESEO_OIL_2D_backwards_single_release(arg_1=1, arg_2='aaa')
+
+# 2D Backwards simulation continuous-release
+TESEO_OIL_2D_backwards_continuous_release(arg_1=2, arg_2='bbb')
 ```
-* `main_method_2(arguments)` - [Short description]:
+
+* TESEO-OIL quasi-3D Simulations:
 ```python
-# Delete jobs older than 2 days
-clean_old_jobs(days=2)
+# quasi-3D Forward simulation single-release
+TESEO_OIL_quasi3D_forward_single_release(arg_1=1, arg_2='aaa')
+
+# quasi-3D Forward simulation continuous-release
+TESEO_OIL_quasi3D_forward_continuous_release(arg_1=1, arg_2='aaa')
 ```
 
 ## :package: Package structure
+Reminder--> *command: `tree -AC -I __pycache__`*
 ````
-(tree /f)
-SICMA.Process.OperationalController
-│   .gitignore
-│   authentifications.key
-│   CHANGELOG.md
-│   DEPLOY_REQUIREMENTS.md
-│   environment.yml
-│   main.py
-│   README.md
-│   requirements.txt
+TESEO.Apiprocess
 |
-├───logs
-|
-├───operational_controller
-│   │   config.py
-│   │   controller.py
-│   │   __init__.py
-│   │
-│   └───utils
-│           data_repository.py
-│           logger.py
-│           __init__.py
-|
-└───tests
-    │   __init__.py
-    │
-    ├───integration
-    │       test_cases.py
-    │       test_data_repository.py
-    │       __init__.py
-    |
-    └───unit
-            test_config.py
-            test_controller.py
-            __init__.py
-
+├── DEPLOY_REQUIREMENTS.md
+├── LICENSE
+├── README.md
+├── environment.yml
+├── pyproject.toml
+├── python_module
+│   ├── __init__.py
+│   ├── api.py
+│   ├── python_module.py
+│   └── utils
+│       ├── __init__.py
+│       └── logger.py
+└── tests
+    ├── __init__.py
+    ├── api_tests
+    ├── data.zip
+    ├── integration_tests
+    │   ├── __init__.py
+    │   └── test_module.py
+    └── unit_tests
+        └── __init__.py
 ````
 ## :house: Local installation
-
-* Using venv + pip:
-```bash
-# Create virtual env
-python -m venv env --clear
-
-# Activate virtual env
-source 'venv_path'
-
-# Install dependencies
-python -m pip install -r requirements.txt
-
-# Install datahubclient github package with --no-deps option
-python -m pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
-```
-
 * Using conda + pip:
 ```bash
 # Create conda env and install python libreries
-conda env create --file environment.yml --name env
+conda env create --file environment.yml --name python-env
 
 # Activate virtual env
-conda activate env
+conda activate python-env
 
-# Install package from github with --no-deps option
-pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
+# # Install package from github with --no-deps option (If needed)
+# pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
 
 ```
----
-## :recycle: Testing
-* To run tests:
+
+* Using venv + pip:  `--> TO COMPLETE!`
 ```bash
-# Unzip tests/fake_results/fake_results.zip in the same directory (fake_inputs/) and run pytest
-unzip -j tests/fake_results/fake_test.zip -d tests/fake_results/
+# # Create virtual env
+# python -m venv env --clear
+
+# # Activate virtual env
+# source 'venv_path'
+
+# # Install dependencies
+# python -m pip install -r requirements.txt
+
+# # Install datahubclient github package with --no-deps option
+# python -m pip install git+git://github.com/IHCantabria/datahub.client.git@v0.8.6#egg=datahubClient --no-deps
+```
+---
+## :recycle: Continuous integration (CI)
+
+* Premcomit.ci with **black formatter** hook on `commit`. ([.pre-commit-config.yaml](https://github.com/IHCantabria/TESEO.Apiprocess/blob/main/.pre-commit-config.yaml))
+* Github workflow with conda based **deployment**, **testing** and **coverage** update on `tags`. ([Github action](https://github.com/IHCantabria/TESEO.Apiprocess/blob/main/.github/workflows/main.yml))
+
+---
+## :heavy_check_mark: Testing
+* To run tests manually:
+```bash
+# Unzip data for testing stored in "data.zip" in "tests/" folder
+7z x tests/data.zip -otests/ 
 
 # Run pytests from console
 pytest
@@ -113,11 +116,9 @@ pytest
 ## :rocket: Package deployment
 Check [DEPLOY_REQUIREMENTS.md](https://github.com/IHCantabria/SICMA.Process.OperationalController/blob/main/DEPLOY_REQUIREMENTS.md) for a full detailed explanation.
 
+---
 ## :incoming_envelope: Contact us
-
 :snake: For code-development issues contact :man_technologist: [German Aragon](https://ihcantabria.com/en/directorio-personal/investigador/german-aragon/) @ :office: [IHCantabria](https://github.com/IHCantabria)
 
-
 ## :copyright: Credits
-
-*  Developed by [IHCantabria](https://github.com/IHCantabria) .
+Developed by :man_technologist: [German Aragon](https://ihcantabria.com/en/directorio-personal/investigador/german-aragon/) @ :office: [IHCantabria](https://github.com/IHCantabria).
