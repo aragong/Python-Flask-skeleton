@@ -1,5 +1,5 @@
 # FOLDERS 
-.vscode/
+.vscode/*
 tests/data
 
 
@@ -9,3 +9,4 @@ tests/data
 *.csv
 *.nc
 *.log
+!.vscode/tasks.json

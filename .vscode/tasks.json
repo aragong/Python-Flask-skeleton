@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [  
+        {
+            "label": "run tests",
+            "type": "process",
+            "command": "${config:python.pythonPath}",
+            "args": [
+                "-m",
+                "pytest"
+            ],
+        },
+        {
+            "label": "run coverage",
+            "type": "shell",
+            "command": "$(dirname ${config:python.pythonPath})/coverage-badge -o coverage.svg -f",
+        },
+        {
+            "label": "run test and coverage",
+            "type": "process",
+            "command": "echo",
+            "args": ["TEST AND COVERAGE SUCCESSFULLY CREATED!"],
+            "dependsOrder": "sequence",
+            "dependsOn": ["run tests", "run coverage"]
+        },
+    ]
+}
