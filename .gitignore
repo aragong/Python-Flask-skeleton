@@ -10,3 +10,4 @@ tests/data
 *.nc
 *.log
 !.vscode/tasks.json
+!.vscode/settings.json
